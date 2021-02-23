@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        var arr=[2,3,4,0,554,654,54,7];
+        var newArr=[];
+        var j=0;
+        for(var i=0;i<arr.length;i++){
+            if(arr[i]>10){
+                //新数组索引号从0开始，递增
+                newArr[j]=arr[i];
+                j++;
+            }
+        }
+        console.log(newArr);
+        */
+        var arr = [1, 2, 3, 4, 2, 4, 2, 6, 9, 2, 7, 5];
+        var newArr = [];
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] >= 5) {
+                //新数组索引号从0开始，递增
+                newArr[newArr.length] = arr[i];
+            }
+        }
+        console.log(newArr);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

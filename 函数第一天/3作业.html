@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       
+        var num = 1;
+        function demo() {
+            console.log(num);
+            //输出为1
+            function demoSon() {
+                num = 3;
+            }
+            var num = 2
+            demoSon();
+            //demoSon();输出没有结果
+        }
+        demo();
+        //demoSon();输出没有结果，函数有就近原则，所以导致demo();输出为undefined 
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        function 构造函数名（）{
+            this.属性=值；
+            this.方法=function(){
+            }
+        }
+        //实列化对象
+        const str=new 构造函数名();
+        //调用方法
+        str.方法();
+        */
+        function Preson(name, age, sex) {
+            this.name = name;
+            this.age = age;
+            this.sex = sex;
+            this.play = function () {
+                console.log(this.name + "正在打球");
+            }
+        }
+        //实列化对象
+        const str = new Preson("张三", 18, "男");
+        //调用
+        console.log(str);
+        console.log(str.name);
+        //调用方法
+        str.play();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

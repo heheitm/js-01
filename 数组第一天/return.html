@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function action(strat,end) {
+            var sum = 0;
+            for (var i = strat; i <= end; i++) {
+                sum += i;
+            }
+            //直接跳出
+            return sum;
+            //这里不显示
+            console.log("不在线");
+        }
+        action(1, 100);
+        console.log("======="+action(1, 100));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

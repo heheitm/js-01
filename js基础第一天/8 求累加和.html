@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var num = 0;
+        var sum = 0;
+        var cha = 0;
+        //求出个位数为3的数
+        for (var i = 1; i <= 100; i++) {
+            if ((i % 10) != 3)
+                continue;
+            num += i;
+        }
+        //求出100的和
+        for (var j = 0; j <= 100; j++) {
+            sum = sum + j;
+        }
+        //相差
+        var cha = sum - num;
+        document.write("整数1～100的累加值为："+cha);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var num = prompt("请输入你需要的操作：\n" + "1.存钱\n" + "2.取钱\n" + "3.显示余额\n" + "4.退出");
+        for (var i = 1; i <= 4; i++) {
+            if (num == 1) {
+                var money = prompt("请输入存钱金额：");
+                var sum = 100 + parseFloat(money);
+                alert("账户余额为" + sum + "元!");
+            } else if (num == 2) {
+                var moneys = prompt("请输入取钱金额：");
+                var sums = 100 - parseFloat(moneys);
+                if (sums < 0) {
+                    alert("账户余额不足!");
+                } else {
+                    alert("账户余额为" + sums + "元!");
+                }
+            } else if (num == 3) {
+                alert("账户余额为：100元!")
+            } else if (num == 4) {
+                alert("确定退出信息！");
+            } else if (parseFloat(num) > 4 || parseFloat(num) <= 0) {
+                alert("抱歉哦，没有此项功能!")
+            }
+         break;
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

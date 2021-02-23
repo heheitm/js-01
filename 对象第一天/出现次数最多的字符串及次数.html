@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+    <script>
+        //吧每个字符都存贮对象 没有对象就为1，存在就+1；  遍历得到最大值和该字符
+        //
+        var str = "abaasdffggghhjjkkgfddsssss3444343";
+        var o = {};
+        for (var i = 0; i < str.length; i++) {
+            var chars = str.charAt(i);//chars 是字符串的每个字符
+            //
+           
+            if (o[chars]) {//o[chars]得到的是属性值
+                o[chars]++;
+
+            } else {
+                o[chars] = 1;
+            }
+        }
+        console.log(o);
+       // console.log(o[chars]);
+        var max = 0;
+        var ch = '';
+        var k;
+        for (k in o) {//遍历
+            //k得到的是属性名
+            //o[k]得到的属性
+            if (o[k] > max) {
+                max = o[k];
+                ch = k;
+            }
+        }
+     
+        console.log(max);
+        console.log(ch);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

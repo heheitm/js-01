@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Hero(name, type, blood) {
+            this.name = name;
+            this.type = type;
+            this.blood = blood;
+            this.attack = function (skill) {
+                console.log(this.name + "发起了" + skill + "攻击");
+            }
+        }
+        //原型成员
+        Hero.prototype.play = function () {
+            console.log("妲己正在尊");
+        }
+        const hero = new Hero("妲己", "法师", 2900);
+        console.log(hero);
+        hero.attack("2000");
+        hero.play();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

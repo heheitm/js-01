@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var num = prompt("请输入班级的人数：");
+        var sum = 0;
+        var avge = 0;
+        for (var i = 1; i <= num; i++) {
+            var grade = prompt("请输入第" + i + "学生的成绩");
+            //prompt是属于字符串类型需要转换成数字类型
+            sum = sum + parseFloat(grade);
+        }
+        avge = sum / num;
+        alert("班总计成绩为：" + sum);
+        alert("班平均成绩为：" + avge);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

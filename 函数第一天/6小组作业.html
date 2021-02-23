@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sun(num, num1, num2) { 
+            var num = prompt("欢迎使用简易计算器：\n" + "1.加法运算；\n" + "2.减法运算；\n" + "3乘法运算\n" + "4.除法运算\n" + "5.退出;\n" + "请输入你的选项:");
+            if (num == 1) {
+                var num1 = prompt("请输入要求的值：");
+                var num2 = prompt("请输入要求的值：");
+                var str = parseFloat(num1) + parseFloat(num2);
+                alert("两个数的和为：" + str);
+            } else if (num == 2) {
+                var num1 = prompt("请输入要求的值：");
+                var num2 = prompt("请输入要求的值：");
+                var str = parseFloat(num1) - parseFloat(num2);
+                alert("两个数的差为：" + str);
+            } else if (num == 3) {
+                var num1 = prompt("请输入要求的值：");
+                var num2 = prompt("请输入要求的值：");
+                var str = parseFloat(num1) * parseFloat(num2);
+                alert("两个数的商为：" + str);
+            } else if (num == 4) {
+                var num1 = prompt("请输入要求的值：");
+                var num2 = prompt("请输入要求的值：");
+                if (num1 <= 0 || num2 < 0) {
+                    alert("当被除数为零或者除数为负数时，不能相除，值为错误");
+                } else {
+                    var str = parseFloat(num1) / parseFloat(num2);
+                    alert("两个数的余数为：" + str);
+                }
+            } else if (num == 5) {
+                alert("退出！");
+                
+            } else if (parseFloat(num) > 5 || parseFloat(num) <= 0) {
+                alert("抱歉哦，没有此项功能!")
+            }
+        }
+        sun();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jjjjj</title>
+    <script>
+        /*
+        var num = 10;
+        function foo(arg) {
+            console.log(num);
+            var num1 = 30;
+            console.log("arg", arg);
+            num2 = 99;
+        }
+        foo("实参");
+        console.log("全局", num);
+        console.log(num2);
+        */
+        var num = 10;
+        function fun() {
+            var num = 20;
+            function fn() {
+                var num = 30;
+                console.log(num);
+            }
+            fn();
+        }
+        //函数有就近原则
+        fun();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

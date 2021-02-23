@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function pa(num) {
+            return num < 10 ? "0" + num : num;
+        }
+        function cut(time) {
+            //date.now() 1970到现在的时间
+            const cur = Date.now();
+
+            const inp = new Date(time).getTime();//未来的时间w
+
+            const sta = (inp - cur) / 1000;//1000是毫秒 未来的时间与现在的时间相减
+
+            //const mo = pa(parseInt(sta / 60 / 60 / 24 / 12));
+            const d = pa(parseInt(sta / 60 / 60 / 24));
+            const h = pa(parseInt(sta / 60 / 60 % 24));
+            const m = pa(parseInt(sta / 60 % 60));
+            const s = pa(parseInt(sta % 60));
+            return  d + '-' + h + ':' + m + ':' + s;
+        }
+        //输入未来的时间
+        console.log(cut("2022-1-2 16:0:0"));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
